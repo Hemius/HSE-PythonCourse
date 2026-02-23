@@ -1,0 +1,5 @@
+timestamp,src_ip,dst_ip,protocols,length_bytes
+2004-12-05T19:16:24.317453+00:00,0.0.0.0,255.255.255.255,eth:ethertype:ip:udp:dhcp,314
+2004-12-05T19:16:24.317748+00:00,192.168.0.1,192.168.0.10,eth:ethertype:ip:udp:dhcp,342
+2004-12-05T19:16:24.387484+00:00,0.0.0.0,255.255.255.255,eth:ethertype:ip:udp:dhcp,314
+2004-12-05T19:16:24.387798+00:00,192.168.0.1,192.168.0.10,eth:ethertype:ip:udp:dhcp,342
