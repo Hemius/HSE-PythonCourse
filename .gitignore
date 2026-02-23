@@ -1,0 +1,46 @@
+# Байткод Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+
+# Дистрибутив / упаковка
+dist/
+build/
+*.egg-info/
+*.egg
+.eggs/
+
+# Виртуальные окружения
+.venv/
+venv/
+env/
+ENV/
+
+# Переменные окружения
+.env
+
+# Тесты и покрытие
+.pytest_cache/
+.coverage
+coverage.xml
+htmlcov/
+
+# Mypy / типизация
+.mypy_cache/
+.dmypy.json
+
+# Ruff / линтеры
+.ruff_cache/
+
+# IDE
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+
+# macOS
+.DS_Store
+
+# Логи
+*.log
