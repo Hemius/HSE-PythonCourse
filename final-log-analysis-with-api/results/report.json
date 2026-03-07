@@ -1,0 +1,287 @@
+{
+  "generated_at": "2026-03-06T18:05:23.503161+00:00",
+  "log_file": "c:\\Users\\ivang\\Desktop\\Python_Final\\suricata_events.jsonl",
+  "summary": {
+    "total_events": 885,
+    "total_alerts": 139,
+    "total_anomalies": 172,
+    "normal_events": 574,
+    "unique_alert_ips": 8,
+    "unique_alert_domains": 3,
+    "unique_alert_files": 3,
+    "period_start": "2026-03-01 07:00:17+00:00",
+    "period_end": "2026-03-01 11:02:00.006000+00:00"
+  },
+  "attack_categories": [
+    {
+      "category": "A Network Trojan was Detected",
+      "count": 81
+    },
+    {
+      "category": "Potentially Bad Traffic",
+      "count": 22
+    },
+    {
+      "category": "Attempted Administrator Privilege Gain",
+      "count": 11
+    },
+    {
+      "category": "Attempted Information Leak",
+      "count": 9
+    },
+    {
+      "category": "Misc activity",
+      "count": 9
+    },
+    {
+      "category": "Policy Violation",
+      "count": 6
+    },
+    {
+      "category": "Malware Command and Control Activity Detected",
+      "count": 1
+    }
+  ],
+  "top_threat_ips": [
+    {
+      "src_ip": "192.168.50.82",
+      "alert_count": 34
+    },
+    {
+      "src_ip": "10.10.110.197",
+      "alert_count": 20
+    },
+    {
+      "src_ip": "172.16.10.188",
+      "alert_count": 18
+    },
+    {
+      "src_ip": "10.10.112.178",
+      "alert_count": 17
+    },
+    {
+      "src_ip": "10.10.255.19",
+      "alert_count": 17
+    },
+    {
+      "src_ip": "182.127.178.249",
+      "alert_count": 15
+    },
+    {
+      "src_ip": "103.153.79.201",
+      "alert_count": 10
+    },
+    {
+      "src_ip": "91.203.145.77",
+      "alert_count": 8
+    }
+  ],
+  "suspicious_domains": [
+    "bird-farm.pigeonbreed.in.net",
+    "botnet-panel.evil.org",
+    "data-exfil.darkweb.io"
+  ],
+  "suspicious_files": [
+    {
+      "filename": "payload.exe",
+      "hash": "a665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3",
+      "hash_type": "sha256"
+    },
+    {
+      "filename": "dropper.dll",
+      "hash": "611d1bc28cb023e8a997a2faed65d88b5b3d95b8610a51c7b0abc8262ff0e150",
+      "hash_type": "sha256"
+    },
+    {
+      "filename": "ransomware.bin",
+      "hash": "2c624232cdd221771294dfbb310acbc8435269acfc8f27c156eca9b96a3e9f27",
+      "hash_type": "sha256"
+    }
+  ],
+  "virustotal_results": [
+    {
+      "ioc": "103.153.79.201",
+      "type": "ip_addresses",
+      "status": "ok",
+      "malicious": 0,
+      "suspicious": 0,
+      "harmless": 0,
+      "undetected": 94
+    },
+    {
+      "ioc": "182.127.178.249",
+      "type": "ip_addresses",
+      "status": "ok",
+      "malicious": 6,
+      "suspicious": 1,
+      "harmless": 56,
+      "undetected": 31
+    },
+    {
+      "ioc": "91.203.145.77",
+      "type": "ip_addresses",
+      "status": "ok",
+      "malicious": 0,
+      "suspicious": 0,
+      "harmless": 0,
+      "undetected": 94
+    },
+    {
+      "ioc": "bird-farm.pigeonbreed.in.net",
+      "type": "domains",
+      "status": "ok",
+      "malicious": 7,
+      "suspicious": 0,
+      "harmless": 51,
+      "undetected": 36
+    },
+    {
+      "ioc": "botnet-panel.evil.org",
+      "type": "domains",
+      "status": "ok",
+      "malicious": 0,
+      "suspicious": 0,
+      "harmless": 0,
+      "undetected": 94
+    },
+    {
+      "ioc": "data-exfil.darkweb.io",
+      "type": "domains",
+      "status": "ok",
+      "malicious": 0,
+      "suspicious": 0,
+      "harmless": 0,
+      "undetected": 94
+    },
+    {
+      "ioc": "a665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3",
+      "type": "files",
+      "status": "ok",
+      "malicious": 0,
+      "suspicious": 0,
+      "harmless": 0,
+      "undetected": 62,
+      "filename": "payload.exe"
+    },
+    {
+      "ioc": "611d1bc28cb023e8a997a2faed65d88b5b3d95b8610a51c7b0abc8262ff0e150",
+      "type": "files",
+      "status": "ok",
+      "malicious": 27,
+      "suspicious": 0,
+      "harmless": 0,
+      "undetected": 44,
+      "filename": "dropper.dll"
+    },
+    {
+      "ioc": "2c624232cdd221771294dfbb310acbc8435269acfc8f27c156eca9b96a3e9f27",
+      "type": "files",
+      "status": "not_found",
+      "malicious": 0,
+      "suspicious": 0,
+      "filename": "ransomware.bin"
+    }
+  ],
+  "vulners_cve": [
+    {
+      "cve": "CVE-2019-0708",
+      "status": "ok",
+      "cvss3_score": 9.8,
+      "cvss3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "cvss3_source": "vulners",
+      "description": "A remote code execution vulnerability exists in Remote Desktop Services formerly known as Terminal Services when an unauthenticated attacker connects to the target system using RDP and sends specially crafted requests, aka 'Remote Desktop Services Remote Code Execution Vulnerability'.",
+      "published": "2019-05-16"
+    },
+    {
+      "cve": "CVE-2020-1472",
+      "status": "ok",
+      "cvss3_score": 10.0,
+      "cvss3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
+      "cvss3_source": "vulners",
+      "description": "An elevation of privilege vulnerability exists when an attacker establishes a vulnerable Netlogon secure channel connection to a domain controller, using the Netlogon Remote Protocol (MS-NRPC). An attacker who successfully exploited the vulnerability could run a specially crafted application on a de",
+      "published": "2020-08-17"
+    },
+    {
+      "cve": "CVE-2021-41773",
+      "status": "ok",
+      "cvss3_score": 9.8,
+      "cvss3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "cvss3_source": "vulners",
+      "description": "A flaw was found in a change made to path normalization in Apache HTTP Server 2.4.49. An attacker could use a path traversal attack to map URLs to files outside the directories configured by Alias-like directives. If files outside of these directories are not protected by the usual default configura",
+      "published": "2021-10-05"
+    },
+    {
+      "cve": "CVE-2021-44228",
+      "status": "ok",
+      "cvss3_score": 10.0,
+      "cvss3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
+      "cvss3_source": "vulners",
+      "description": "Apache Log4j2 2.0-beta9 through 2.15.0 (excluding security releases 2.12.2, 2.12.3, and 2.3.1) JNDI features used in configuration, log messages, and parameters do not protect against attacker controlled LDAP and other JNDI related endpoints. An attacker who can control log messages or log message p",
+      "published": "2021-12-10"
+    },
+    {
+      "cve": "CVE-2022-22965",
+      "status": "ok",
+      "cvss3_score": 9.8,
+      "cvss3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "cvss3_source": "vulners",
+      "description": "A Spring MVC or Spring WebFlux application running on JDK 9+ may be vulnerable to remote code execution (RCE) via data binding. The specific exploit requires the application to run on Tomcat as a WAR deployment. If the application is deployed as a Spring Boot executable jar, i.e. the default, it is ",
+      "published": "2022-04-01"
+    }
+  ],
+  "response_actions": [
+    {
+      "ip": "192.168.50.82",
+      "alert_count": 34,
+      "vt_confirmed": false,
+      "action": "BLOCK"
+    },
+    {
+      "ip": "10.10.110.197",
+      "alert_count": 20,
+      "vt_confirmed": false,
+      "action": "BLOCK"
+    },
+    {
+      "ip": "172.16.10.188",
+      "alert_count": 18,
+      "vt_confirmed": false,
+      "action": "BLOCK"
+    },
+    {
+      "ip": "10.10.112.178",
+      "alert_count": 17,
+      "vt_confirmed": false,
+      "action": "BLOCK"
+    },
+    {
+      "ip": "10.10.255.19",
+      "alert_count": 17,
+      "vt_confirmed": false,
+      "action": "BLOCK"
+    },
+    {
+      "ip": "182.127.178.249",
+      "alert_count": 15,
+      "vt_confirmed": true,
+      "action": "BLOCK"
+    },
+    {
+      "ip": "103.153.79.201",
+      "alert_count": 10,
+      "vt_confirmed": false,
+      "action": "BLOCK"
+    },
+    {
+      "ip": "91.203.145.77",
+      "alert_count": 8,
+      "vt_confirmed": false,
+      "action": "BLOCK"
+    },
+    {
+      "domain": "bird-farm.pigeonbreed.in.net",
+      "vt_confirmed": true,
+      "action": "BLOCK"
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+# Список зависимостей для работы программы
+pandas==3.0.1
+matplotlib==3.10.8
+requests==2.32.5
+python-dotenv==1.2.2
+PyYAML==6.0.3
