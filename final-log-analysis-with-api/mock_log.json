@@ -1,0 +1,69 @@
+[
+  {
+    "timestamp": "2026-03-01T08:29:31.403+0100",
+    "event_type": "dns",
+    "src_ip": "10.10.118.218",
+    "dest_ip": "8.8.8.8",
+    "dest_port": 53,
+    "proto": "UDP",
+    "app_proto": "dns",
+    "dns": {
+      "type": "query",
+      "rrname": "google.com",
+      "rrtype": "A"
+    }
+  },
+  {
+    "timestamp": "2026-03-01T08:30:11.002+0100",
+    "event_type": "http",
+    "src_ip": "192.168.1.15",
+    "dest_ip": "45.67.89.10",
+    "dest_port": 80,
+    "proto": "TCP",
+    "app_proto": "http",
+    "http": {
+      "hostname": "c2-server.malware.xyz",
+      "url": "/panel",
+      "http_method": "GET",
+      "http_user_agent": "curl/7.68.0"
+    }
+  },
+  {
+    "timestamp": "2026-03-01T08:30:45.120+0100",
+    "event_type": "alert",
+    "src_ip": "45.67.89.10",
+    "dest_ip": "192.168.1.15",
+    "dest_port": 4444,
+    "proto": "TCP",
+    "alert": {
+      "severity": 1,
+      "signature": "ET TROJAN Possible C2 Beaconing CVE-2021-44228",
+      "category": "Malware Command and Control Activity Detected"
+    }
+  },
+  {
+    "timestamp": "2026-03-01T08:32:04.221+0100",
+    "event_type": "alert",
+    "src_ip": "103.153.79.201",
+    "dest_ip": "192.168.1.20",
+    "dest_port": 80,
+    "proto": "TCP",
+    "alert": {
+      "severity": 2,
+      "signature": "ET WEB_SERVER Possible Apache Path Traversal CVE-2021-41773",
+      "category": "Web Application Attack"
+    }
+  },
+  {
+    "timestamp": "2026-03-01T08:32:33.990+0100",
+    "event_type": "fileinfo",
+    "src_ip": "103.153.79.201",
+    "dest_ip": "192.168.1.20",
+    "proto": "TCP",
+    "fileinfo": {
+      "filename": "payload.exe",
+      "md5": "44d88612fea8a8f36de82e1278abb02f",
+      "sha256": "a665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3"
+    }
+  }
+]
