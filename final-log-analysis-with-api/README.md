@@ -52,7 +52,7 @@
 ```bash
 # 1. Клонировать репозиторий
 git clone <url>
-cd Python_Final
+cd final-log-analysis-with-api
 
 # 2. Создать виртуальное окружение
 python -m venv .venv
