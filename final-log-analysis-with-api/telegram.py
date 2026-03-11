@@ -15,19 +15,14 @@ from __future__ import annotations
 
 import html
 import logging
-import os
 from pathlib import Path
 
 import pandas as pd
 import requests
 
-from config import CHART_FILE, TELEGRAM_CFG, VT_MALICIOUS_MIN
+from config import CHART_FILE, TELEGRAM_CFG, VT_MALICIOUS_MIN, TG_BOT_TOKEN, TG_CHAT_ID
 
 logger = logging.getLogger(__name__)
-
-# Данные Telegram-бота из .env
-TG_BOT_TOKEN = os.getenv("TG_BOT_TOKEN", "").strip() or None
-TG_CHAT_ID = os.getenv("TG_CHAT_ID", "").strip() or None
 
 # Настройки поведения из config.yaml
 TG_ENABLED = TELEGRAM_CFG.get("enabled", False)
