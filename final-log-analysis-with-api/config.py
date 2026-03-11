@@ -57,5 +57,7 @@ VULNERS_REQUEST_DELAY     = _CFG["vulners"]["request_delay"]
 # Приватные сети
 PRIVATE_NETS = _CFG["private_networks"]
 
-# Telegram. Экспортируем как словарь, чтобы telegram.py не импортировал _CFG напрямую.
+# Telegram
+TG_BOT_TOKEN = os.getenv("TG_BOT_TOKEN", "").strip() or None
+TG_CHAT_ID   = os.getenv("TG_CHAT_ID",   "").strip() or None
 TELEGRAM_CFG: dict = _CFG.get("telegram", {})
